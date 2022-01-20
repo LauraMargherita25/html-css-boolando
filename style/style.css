@@ -12,10 +12,36 @@
     height: 1000px; 
     background-color: brown;
 }
+.vetrina .debug{
+    background-color: chocolate;
+}
 
+.description .debug{
+    background-color: coral;
+}
 /* /Debug section */
 
 .conteiner{
     max-width: 1200px;
     margin: 0 auto;
+}
+.row{
+text-align: center;
+}
+
+section{
+    width: 350px;
+    height: 600px;
+    display: inline-block;
+
+}
+
+section .vetrina{
+    width: 100%;
+    height: 85%;
+}
+
+section .description{
+    width: 100%;
+    height: 15%;
 }
