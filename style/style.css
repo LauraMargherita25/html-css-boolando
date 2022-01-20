@@ -8,15 +8,14 @@
 
 /* Debug section */
 
-.container, .debug{
-    height: 1000px; 
+.container.debug{
     background-color: brown;
 }
-.vetrina .debug{
+.debug .vetrina {
     background-color: chocolate;
 }
 
-.description .debug{
+.debug .description {
     background-color: coral;
 }
 /* /Debug section */
@@ -27,11 +26,13 @@
 }
 .row{
 text-align: center;
+margin: 1rem 0;
 }
 
 section{
     width: 350px;
     height: 600px;
+    margin: 0 1em;
     display: inline-block;
 }
 
@@ -40,6 +41,33 @@ section{
     height: 85%;
     background-image: url(../img/1.webp);
     background-size: contain;
+    position: relative;
+}
+
+.vetrina .cuore::after{
+    content: "\2764";
+    color: tomato;
+    background-color: white;
+    padding: .5rem;
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+.vetrina .tag{
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+}
+.vetrina .discount{
+    background-color: red;
+    padding: 5px;
+    
+}
+.vetrina .sustainability{
+    background-color: green;
+    padding: 5px;
 }
 
 .description{
